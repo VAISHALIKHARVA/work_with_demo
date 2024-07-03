@@ -1,0 +1,66 @@
+Git is a version control system.
+
+Git helps you keep track of code changes.
+
+Git is used to collaborate on code.
+
+Use global to set the username and e-mail for every repository on your computer.
+*git config --global user.email "test@w3schools.com"
+
+Git now knows that it should watch the folder you initiated it on.
+Git creates a hidden folder to keep track of changes.
+*git init 
+
+we check the Git status and see if it is a part of our repo:
+*git status
+
+add all file in git hub
+*git add .
+
+Any time you start working on a project, you should get the most recent changes to your local copy.
+
+With Git, you can do that with pull.
+
+pull is a combination of 2 different commands:
+
+fetch
+merge
+Let's take a closer look into how fetch, merge, and pull works.
+
+Git fetch:
+fetch gets all the change history of a tracked branch/repo.
+*git fetch origin
+
+Git Merge:
+we can merge our current branch (master) with origin/master
+*git merge origin/master
+
+Git pull:
+pull is a combination of fetch and merge. It is used to pull all changes from a remote repository into the branch you are working on.
+*git pull origin
+
+Push Changes to GitHub:
+*git commit -a -m "Updated index.html. Resized image"
+*git push origin
+
+Pulling a Branch from GitHub:
+git branch
+* master
+
+git branch -a
+* master
+  remotes/origin/html-skeleton
+  remotes/origin/master
+*git checkout html-skeleton
+
+*git pull
+
+Push a Branch to GitHub:
+*git checkout -b update-readme
+Switched to a new branch 'update-readme'
+
+*git add README.md
+
+*git commit -m "Updated readme for GitHub Branches"
+
+*git push origin update-readme
